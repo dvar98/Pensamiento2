@@ -11,7 +11,8 @@ int main()
     int zn;
     setlocale(LC_CTYPE, "Spanish");
     
-    cout <<"Ingresa la zona de llamada:" << endl << "America del norte(1)"<< endl << "America central(2)" << endl << "America del sur(3)" << endl << "Europa(4)" << endl << "Asia(5)" << endl << 
+    cout <<"Ingresa la zona de llamada:" << endl << "America del norte(1)"<< endl << "America central(2)" << endl << "America del sur(3)" << endl 
+        << "Europa(4)" << endl << "Asia(5)" << endl << 
         "África(6)"<< endl << "Oceanía(7)"<< endl;
     cin >> zn;
     cout <<"Cuanto duro la llamada" << endl;
