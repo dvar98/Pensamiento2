@@ -1,0 +1,16 @@
+Ingresa la zona de llamada:
+America del norte(1)
+America central(2)
+America del sur(3)
+Europa(4)
+Asia(5)
+África(6)
+Oceanía(7)
+>>>1
+Cuanto duro la llamada
+>>>2.5
+La llamada se realizo entre las 20:00 y 24:00 horas Si(Y) ò No (N)
+>>>Y
+El costo total de la llamada 2.5 minutos a America del norte es de $ 475
+
+Process Finished.
