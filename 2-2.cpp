@@ -1,140 +1,155 @@
-#include <iostream>
+#include<iostream>  
+#include <string>
+  
 
-using namespace std;
+using namespace std; 
 
 
-int main()
-{
-    int Marca,Modelo ;
-    float prs,cst ;
-    cout << "Ingresar marca del carro deseado:" << endl << "Mazda (1)" << endl << "Chevrolet (2)" <<  endl <<
-        "Renault (3) "<< endl;
+int main() 
+{ 
     
-    cin >> Marca;
+    string nomB,Trs;
+    long pog,ty,id;
+    int crt;
+
+    cout <<"Ingrese nombre del estudiante"<<endl ;
+    cin >> nomB;
+    cout <<"Ingrese semestre que esta cursando (1-10)"<< endl;
+    cin >> pog;
+    cout <<"Ingrese la ingenieria que esta cursando o consultar:" << endl << "Sistemas(1)" << endl << "Electronica(2)" << endl 
+        << "Ambiental(3)" << endl << "Industrial(4)" << endl << "Quimica(5)" <<endl;
+    cin >>crt;
+    cout << "Pertence alguna caja de compensacion Si(Y) o No (N)";
+    cin >> Trs;
     
-    switch (Marca)
+    switch (crt)
     {
         case 1:
-            cout <<"Ingresar el  modelo que desea es: Mazda2 (1) Mazda3 (2) Mazda6 (3) ";
-            cin >> Modelo;
-            switch (Modelo)
+            if (Trs == "Y")
             {
-                case 1:
-                    cout << "Ingresar el Costo del carro en Millones de pesos ";
-                    cin >> prs;
-                    if (prs >= 40 && prs<=60)
-                    {
-                        cst = prs-(prs*0.08);
-                        cout << "El precio a pagar es: " << cst << " Millones de pesos" ;
-                    }
-                    else
-                    {
-                        cout << "El costo debe estar entre 40 y 60 Millones de pesos";
-                    }
-                    
-                    break;  
-                
-                case 2:
-                    cout << "Ingresar el Costo del carro";
-                    cin >> prs;
-                    if (prs >= 50 && prs<=70)
-                    {
-                        cst = prs-(prs*0.05);
-                        cout << "El precio a pagar es: " << cst << " Millones de pesos" ;
-                        break;
-                    }
-                    else
-                    {
-                        cout << "El costo debe estar entre 50 y 70 Millones de pesos";
-                    }
-                    break;  
-                
-                case 3:
-                    cout << "Ingresar el Costo del carro";
-                    cin >> prs;
-                    if (prs >=80)
-                    {
-                        cst = prs-(prs*0.15);
-                        cout << "El precio a pagar es: " << cst << " Millones de pesos" ;
-                    }
-                    else
-                    {
-                        cout << "El costo debe estar entre 80 o mas Millones de pesos";
-                    }
-                    break;   
+                id = 15000;
+                ty = 4780000+(id)-(4780000*0.10);
+                cout <<"El estudiante "<< nomB << " del programa ingenieria de sistemas del semestre "<< pog << " debe pagar "<< ty <<endl;
             }
-             return 0;
-            
+            else
+            {
+              if (pog >=1 && pog<=5)
+              {
+                  id = 30000;
+                  ty = id+4780000;
+                  cout <<"El estudiante "<< nomB << " del programa ingenieria de sistemas del semestre "<< pog << " debe pagar "<< ty << endl;
+              }
+                else
+                {
+                    id = 45000;
+                    ty = id+4780000;
+                    cout <<"El estudiante "<< nomB << " del programa ingenieria de sistemas del semestre "<< pog << " debe pagar "<< ty << endl;
+                }
+                
+            }
+            break;
         case 2:
-            cout <<"Ingresar el  modelo que desea es: Sonic (1) Cruze (2)";
-            cin >> Modelo;
-            switch (Modelo)
-          {
-            case 1:
-                    cout << "Ingresar el Costo del carro";
-                    cin >> prs;
-                    if (prs >= 45 && prs<=60)
-                    {
-                        cst = prs-(prs*0.10);
-                        cout << "El precio a pagar es: " << cst << " Millones de pesos" ;
-                    }
-                    else
-                    {
-                        cout << "El costo debe estar entre 45 y 60 Millones de pesos";
-                    }
-                    break;  
-            case 2:
-                    cout << "Ingresar el Costo del carro";
-                    cin >> prs;
-                    if (prs >=50)
-                    {
-                        cst = prs-(prs*0.20);
-                        cout << "El precio a pagar es: " << cst << " Millones de pesos" ;
-                    }
-                    else
-                    {
-                        cout << "El costo debe estar entre 50 o mas Millones de pesos";
-                    }
-                    break;  
-           }
-            return 0;
+            if (Trs == "Y")
+            {
+                id = 15000;
+                ty = 4520000+(id)-(0.10*4520000);
+                cout <<"El estudiante "<< nomB << " del programa ingenieria Electronica del semestre "<< pog << " debe pagar "<< ty << endl;
+            }
+            else
+            {
+              if (pog >=1 && pog<=5)
+              {
+                  id = 30000;
+                  ty = id+4520000;
+                  cout <<"El estudiante "<< nomB << " del programa ingenieria Ambiental "<< pog << " debe pagar "<< ty << endl;
+              }
+                else
+                {
+                    id = 45000;
+                    ty = id+4520000;
+                    cout <<"El estudiante "<< nomB << " del programa ingenieria Ambiental del semestre "<< pog << " debe pagar "<< ty << endl;
+                }
+                
+            }
+            break;
             
         case 3:
-            cout << "Ingresar el modelo que desea es: Clio (1) Logan (2)";
-            cin >> Modelo;
-            switch (Modelo)
+            if (Trs == "Y")
             {
-            case 1:
-                    cout << "Ingresar el Costo del carro";
-                    cin >> prs;
-                    if (prs >= 35 && prs<=45)
-                    {
-                        cst = prs-(prs*0.07);
-                        cout << "El precio a pagar es: " << cst << " Millones de pesos" ;
-                    }
-                    else
-                    {
-                        cout << "El costo debe estar entre 35 y 45 Millones de pesos";
-                    }
-                    break;  
-            case 2:
-                    cout << "Ingresar el Costo del carro";
-                    cin >> prs;
-                    if (prs >=40)
-                    {
-                        cst = prs-(prs*0.15);
-                        cout << "El precio a pagar es: " << cst << " Millones de pesos" ;
-                    }
-                    else
-                    {
-                        cout << "El costo debe estar entre 40 o mas Millones de pesos";
-                    }
-                    break;   
-    }
-    return 0;
-    
+                id = 15000;
+                ty = 4640000+(id)-(0.10*4640000);
+                cout <<"El estudiante "<< nomB << " del programa ingenieria Ambiental del semestre "<< pog << " debe pagar "<< ty << endl;
+            }
+            else
+            {
+              if (pog >=1 && pog<=5)
+              {
+                  id = 30000;
+                  ty = id+4640000;
+                  cout <<"El estudiante "<< nomB << " del programa ingenieria Ambiental "<< pog << " debe pagar "<< ty << endl;
+              }
+                else
+                {
+                    id = 45000;
+                    ty = id+4640000;
+                    cout <<"El estudiante "<< nomB << " del programa ingenieria Ambiental del semestre "<< pog << " debe pagar "<< ty << endl;
+                }
+                
+            }
+            break;
+            
+        case 4:
+            if (Trs == "Y")
+            {
+                id = 15000;
+                ty = 4700000+(id)-(0.10*4700000);
+                cout <<"El estudiante "<< nomB << " del programa ingenieria Industrial del semestre "<< pog << " debe pagar "<< ty << endl;
+            }
+            else
+            {
+              if (pog >=1 && pog<=5)
+              {
+                  id = 30000;
+                  ty = id+4700000;
+                  cout <<"El estudiante "<< nomB << " del programa ingenieria Industrial "<< pog << " debe pagar "<< ty << endl;
+              }
+                else
+                {
+                    id = 45000;
+                    ty = id+4700000;
+                    cout <<"El estudiante "<< nomB << " del programa ingenieria Industrial del semestre "<< pog << " debe pagar "<< ty << endl;
+                }
+                
+            }
+            break;
+            
+        case 5:
+            if (Trs == "Y")
+            {
+                id = 15000;
+                ty = 3995000+(id)-(0.10*3995000);
+                cout <<"El estudiante "<< nomB << " del programa ingenieria Quimica del semestre "<< pog << " debe pagar "<< ty << endl;
+            }
+            else
+            {
+              if (pog >=1 && pog<=5)
+              {
+                  id = 30000;
+                  ty = id+3995000;
+                  cout <<"El estudiante "<< nomB << " del programa ingenieria Quimica "<< pog << " debe pagar "<< ty << endl;
+              }
+                else
+                {
+                    id = 45000;
+                    ty = id+3995000;
+                    cout <<"El estudiante "<< nomB << " del programa ingenieria Quimica del semestre "<< pog << " debe pagar "<< ty << endl;
+                }
+                
+            }
+            break;
+            
         default:
-            cout <<" Ingresar algunos de los valores  ";
-    }
-    return 0;
-}
+            cout << "Ingrese las materias que estan en la lista de opciones";
+          }
+    return 0; 
+} 
