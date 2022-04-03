@@ -1,0 +1,23 @@
+Process Killed.
+
+
++ g++ -w -Wall -std=c++14 -O2 -o main.out main.cpp -lm
+
++ ./main.out
+
+>>>El precio de boleta localidad1 1 $100000
+# de boletas que quiere comprar ?
+>>>5
+
+>>>El precio de boleta localidad 2 $750000
+# de boletas que quiere comprar ?
+>>>15
+
+>>>El precio de boleta localidad 3 $950000
+# de boletas que quiere comprar ?
+>>>20
+
+>>>El total de venta de boletos en  localida 1 es 5 El total recaudado fue de $: 500000
+El total de venta de boletos en  localida 2 es 15 El total recaudado fue de $: 11250000
+El total de venta de boletos en  localida 3 es 20 El total recaudado fue de $: 19000000
+El total de venta fue de $30750000
