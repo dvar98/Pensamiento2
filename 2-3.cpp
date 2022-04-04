@@ -32,7 +32,7 @@ int main()
             break;
             
         case 2:
-            if (temp >=70 && tem<=85)
+            if (temp >=70 && temp<=85)
             {
                 cout << "Arbol a plantar es Roble";
             }
